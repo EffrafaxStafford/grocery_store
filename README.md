@@ -1,2 +1,2 @@
-# grocery_stores
+# grocery_store
 Проект магазина продуктов
