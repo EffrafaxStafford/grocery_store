@@ -31,7 +31,7 @@ class Category(SelfNameMixin, models.Model):
         default=None)
 
     class Meta:
-        verbose_name = 'Категория'
+        verbose_name = 'Категорию'
         verbose_name_plural = 'Категории'
         ordering = ('name',)
 
@@ -59,7 +59,7 @@ class Subcategory(SelfNameMixin, models.Model):
         default=None)
 
     class Meta:
-        verbose_name = 'Подкатегория'
+        verbose_name = 'Подкатегорию'
         verbose_name_plural = 'Подкатегории'
         ordering = ('name',)
 
@@ -89,7 +89,7 @@ class Product(SelfNameMixin, models.Model):
         ordering = ('subcategory', 'name')
 
 
-class ProductImage(SelfNameMixin, models.Model):
+class ProductImage(models.Model):
     """Модель для хранения изображении продуктов."""
 
     image = models.ImageField(
@@ -111,3 +111,7 @@ class ProductImage(SelfNameMixin, models.Model):
         verbose_name = 'Изображение'
         verbose_name_plural = 'Изображения'
         ordering = ('product', 'size')
+        unique_together = ['product', 'size']
+    
+    def __str__(self):
+        return f'{self.product.slug}_{self.size}_image'
