@@ -8,17 +8,7 @@ from constants import MIN_QUANTITY_PRODUCT
 User = get_user_model()
 
 
-class SelfNameMixin():
-    """Миксин для определения __str__."""
-
-    class Meta:
-        abstract = True
-
-    def __str__(self):
-        return self.name
-
-
-class Cart(SelfNameMixin, models.Model):
+class Cart(models.Model):
     """Модель для хранения корзины пользователя."""
 
     user = models.OneToOneField(
@@ -38,9 +28,12 @@ class Cart(SelfNameMixin, models.Model):
     class Meta:
         verbose_name = 'Корзина пользователя'
         ordering = ('user',)
+    
+    def __str__(self):
+        return self.user.username
 
 
-class CartItem(SelfNameMixin, models.Model):
+class CartItem(models.Model):
     """Модель для хранения товаров в корзине пользователя."""
 
     cart = models.ForeignKey(

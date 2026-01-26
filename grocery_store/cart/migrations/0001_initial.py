@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 'verbose_name': 'Корзина пользователя',
                 'ordering': ('user',),
             },
-            bases=(cart.models.SelfNameMixin, models.Model),
+            bases=(models.Model,),
         ),
         migrations.CreateModel(
             name='CartItem',
@@ -40,6 +40,6 @@ class Migration(migrations.Migration):
                 'verbose_name': 'Товары пользователя',
                 'ordering': ('product',),
             },
-            bases=(cart.models.SelfNameMixin, models.Model),
+            bases=(models.Model,),
         ),
     ]

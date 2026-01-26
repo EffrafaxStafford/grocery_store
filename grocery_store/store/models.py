@@ -110,7 +110,7 @@ class ProductImage(models.Model):
     class Meta:
         verbose_name = 'Изображение'
         verbose_name_plural = 'Изображения'
-        ordering = ('product', 'size')
+        ordering = ('-size',)
         unique_together = ['product', 'size']
     
     def __str__(self):
