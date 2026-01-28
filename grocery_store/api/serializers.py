@@ -39,6 +39,11 @@ class CartItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = CartItem
         fields = ('product', 'quantity')
+    
+    def validate_quantity(self, value):
+        if value < 0:
+            raise serializers.ValidationError('quantity не может быть отрицательным!')
+        return value
 
 
 class CartSerializer(serializers.ModelSerializer):
@@ -46,5 +51,4 @@ class CartSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cart
-        fields = ('items',)
-
+        fields = ('total_quantity', 'total_price', 'items')

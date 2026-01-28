@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'drf_spectacular',
     'store.apps.StoreConfig',
     'cart.apps.CartConfig',
     'api.apps.ApiConfig',
