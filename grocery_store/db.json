@@ -1,0 +1,755 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-01-29T11:21:01.345Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Продукты",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-01-29T11:21:04.146Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Продукты",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-01-29T11:22:06.933Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Одежда",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-01-29T11:22:42.404Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Футболки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-01-29T11:24:09.951Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Щтаны",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-01-29T11:25:10.678Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Молочка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-01-29T11:26:00.263Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Овощи",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-01-29T11:28:33.671Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Штаны",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u043f\\u043e\\u0434\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-01-29T11:30:45.587Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Хлопковая футболка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"hlopkovaya-futbolka_small_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"hlopkovaya-futbolka_medium_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"hlopkovaya-futbolka_big_image\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-01-29T11:32:28.696Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Штаны карго",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"shtany-kargo_small_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"shtany-kargo_medium_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"shtany-kargo_big_image\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-01-29T11:34:05.887Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Молоко",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"moloko_small_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"moloko_medium_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"moloko_big_image\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-01-29T11:35:17.147Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Творог",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"tvorog_small_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"tvorog_medium_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"tvorog_big_image\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-01-29T11:36:43.499Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Огурцы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"ogurcy_small_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"ogurcy_medium_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"ogurcy_big_image\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-01-29T11:38:00.680Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Помидоры",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"pomidory_small_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"pomidory_medium_image\"}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"pomidory_big_image\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-01-29T11:39:37.353Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "testuser",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-01-29T11:40:10.521Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "testuser",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-01-29T11:41:14.464Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "anotheruser",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-01-29T11:41:16.748Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "anotheruser",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-01-29T11:42:34.779Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "CartItem object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-01-29T11:42:45.436Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "CartItem object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-01-29T11:42:55.336Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "CartItem object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-01-29T11:43:02.373Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "CartItem object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-01-29T11:43:12.018Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "CartItem object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-01-29T11:43:21.153Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "CartItem object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$23JMCBh9YSZQGKQd8JeraN$4LDVQm2XNkq3Svz3kPTxYz9D1LJw+FIB6X/jMhAzs2s=",
+    "last_login": "2026-01-29T12:11:08.376Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-29T11:16:31.818Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$v5pWc9O9j7cHp8TeaSqoO1$yoK1yOGhJxfk0ZbtPKMVsPer7IlphZaaoFgsLfDfqZE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-01-29T11:39:37Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$mDg5UgbgnQz6YnWPWJM2t3$VNFLYoSL8Ls0/greiwUVmOtjk/fcXSN7hSWdeneRwqE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "anotheruser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-01-29T11:41:14Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e584hr361vt0foj7b6clj62k97w2gvfl",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlnrLxYlPWew1t41DiBbipMKcXcSKQV0o3lv5i0irkuN6-A5TiQuQonTb5cwP7ntgB7Y7l3m3pZ5SnJX5EGHvHXi1_Vw_w4qjrqtz0UZTo48pi2gUVYBeW0zAJqsmQLYQNqAL8HYAqhMKMg5Wa-dAy8-X96NN3c:1vlQrc:HT8SKbxSXdBiUisJDB6KfAtcI9yhgbwore4Ham9hLkU",
+    "expire_date": "2026-02-12T12:11:08.377Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qlrb43dqbaeb1ceq8lu5gc1m29z7fa9y",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlnrLxYlPWew1t41DiBbipMKcXcSKQV0o3lv5i0irkuN6-A5TiQuQonTb5cwP7ntgB7Y7l3m3pZ5SnJX5EGHvHXi1_Vw_w4qjrqtz0UZTo48pi2gUVYBeW0zAJqsmQLYQNqAL8HYAqhMKMg5Wa-dAy8-X96NN3c:1vlQ10:RTM5nPmNT8lXANuHAENI4v4xq5ZKbVd7Ra92CUtPubE",
+    "expire_date": "2026-02-12T11:16:46.573Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "bdd1a6304fcca2a30e6f63022c8af5ddcc5097c1",
+  "fields": {
+    "user": 3,
+    "created": "2026-01-29T12:12:52.342Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "e51577ded84ce2aaa5493b49945d01e19be13130",
+  "fields": {
+    "user": 2,
+    "created": "2026-01-29T12:02:31.744Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 1,
+  "fields": {
+    "name": "Продукты",
+    "slug": "produkty",
+    "image": "images/categories/Снимок_экрана_2026-01-29_в_14.20.36.png"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 2,
+  "fields": {
+    "name": "Одежда",
+    "slug": "odezhda",
+    "image": "images/categories/Снимок_экрана_2026-01-29_в_14.21.52.png"
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Футболки",
+    "slug": "futbolki",
+    "category": 2,
+    "image": "images/subcategories/Снимок_экрана_2026-01-29_в_14.21.52.png"
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Штаны",
+    "slug": "shtany",
+    "category": 2,
+    "image": "images/subcategories/Снимок_экрана_2026-01-29_в_14.23.35.png"
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Молочка",
+    "slug": "molochka",
+    "category": 1,
+    "image": "images/subcategories/Снимок_экрана_2026-01-29_в_14.24.59.png"
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 4,
+  "fields": {
+    "name": "Овощи",
+    "slug": "ovoshi",
+    "category": 1,
+    "image": "images/subcategories/Снимок_экрана_2026-01-29_в_14.25.35.png"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1,
+  "fields": {
+    "name": "Хлопковая футболка",
+    "slug": "hlopkovaya-futbolka",
+    "price": 250,
+    "subcategory": 1
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "name": "Штаны карго",
+    "slug": "shtany-kargo",
+    "price": 2600,
+    "subcategory": 2
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "name": "Молоко",
+    "slug": "moloko",
+    "price": 90,
+    "subcategory": 3
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "name": "Творог",
+    "slug": "tvorog",
+    "price": 120,
+    "subcategory": 3
+  }
+},
+{
+  "model": "store.product",
+  "pk": 5,
+  "fields": {
+    "name": "Огурцы",
+    "slug": "ogurcy",
+    "price": 85,
+    "subcategory": 4
+  }
+},
+{
+  "model": "store.product",
+  "pk": 6,
+  "fields": {
+    "name": "Помидоры",
+    "slug": "pomidory",
+    "price": 260,
+    "subcategory": 4
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 1,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.30.12.png",
+    "size": "small",
+    "product": 1
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 2,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.30.03.png",
+    "size": "medium",
+    "product": 1
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 3,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.29.37.png",
+    "size": "big",
+    "product": 1
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 4,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.32.03.png",
+    "size": "small",
+    "product": 2
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 5,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.31.55.png",
+    "size": "medium",
+    "product": 2
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 6,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.31.47.png",
+    "size": "big",
+    "product": 2
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 7,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.33.44.png",
+    "size": "small",
+    "product": 3
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 8,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.33.38.png",
+    "size": "medium",
+    "product": 3
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 9,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.33.33.png",
+    "size": "big",
+    "product": 3
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 10,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.34.55.png",
+    "size": "small",
+    "product": 4
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 11,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.34.49.png",
+    "size": "medium",
+    "product": 4
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 12,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.34.37.png",
+    "size": "big",
+    "product": 4
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 13,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.36.22.png",
+    "size": "small",
+    "product": 5
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 14,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.36.17.png",
+    "size": "medium",
+    "product": 5
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 15,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.36.10.png",
+    "size": "big",
+    "product": 5
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 16,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.37.38.png",
+    "size": "small",
+    "product": 6
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 17,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.37.31.png",
+    "size": "medium",
+    "product": 6
+  }
+},
+{
+  "model": "store.productimage",
+  "pk": 18,
+  "fields": {
+    "image": "images/products/Снимок_экрана_2026-01-29_в_14.37.26.png",
+    "size": "big",
+    "product": 6
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 1,
+  "fields": {
+    "user": 1
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 2,
+  "fields": {
+    "user": 2
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 3,
+  "fields": {
+    "user": 3
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 1,
+  "fields": {
+    "cart": 2,
+    "product": 3,
+    "quantity": 1
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 2,
+  "fields": {
+    "cart": 2,
+    "product": 5,
+    "quantity": 2
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 3,
+  "fields": {
+    "cart": 2,
+    "product": 6,
+    "quantity": 2
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 4,
+  "fields": {
+    "cart": 2,
+    "product": 1,
+    "quantity": 1
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 5,
+  "fields": {
+    "cart": 3,
+    "product": 4,
+    "quantity": 2
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 6,
+  "fields": {
+    "cart": 3,
+    "product": 2,
+    "quantity": 2
+  }
+}
+]

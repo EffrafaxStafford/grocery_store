@@ -55,4 +55,4 @@ class CartItem(models.Model):
 
     class Meta:
         verbose_name = 'Товары пользователя'
-        ordering = ('product',)
+        ordering = ('cart', 'product')
