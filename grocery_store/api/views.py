@@ -1,6 +1,5 @@
-from rest_framework import generics, viewsets, permissions, mixins
+from rest_framework import generics, viewsets, permissions
 from rest_framework.status import HTTP_204_NO_CONTENT
-from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 
@@ -44,10 +43,10 @@ class CartClearAPIView(generics.CreateAPIView):
 
 
 class CartItemViewSet(viewsets.ModelViewSet):
-    # queryset = CartItem.objects.all()
     serializer_class = CartItemSerializer
     permission_classes = (permissions.IsAuthenticated,)
     authentication_classes = (TokenAuthentication,)
+    lookup_field = 'product__id'
 
     def get_queryset(self):
         return self.request.user.cart.items.all()
