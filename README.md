@@ -47,7 +47,7 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Перейти а папку проекта и выполнить миграции:
+Перейти в папку проекта и выполнить миграции:
 
 ```
 cd grocery_store
