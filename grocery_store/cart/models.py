@@ -40,7 +40,7 @@ class CartItem(models.Model):
         Cart,
         on_delete=models.CASCADE,
         related_name='items',
-        verbose_name='Корзина')
+        verbose_name='Корзина пользователя')
     product = models.ForeignKey(
         Product,
         on_delete=models.CASCADE,
@@ -56,3 +56,4 @@ class CartItem(models.Model):
     class Meta:
         verbose_name = 'Товары пользователя'
         ordering = ('cart', 'product')
+        unique_together = ('cart', 'product')

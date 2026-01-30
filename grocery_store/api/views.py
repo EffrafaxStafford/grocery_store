@@ -7,7 +7,9 @@ from store.models import Category, Product
 from .serializers import (CategorySerializer,
                           ProductSerializer,
                           CartSerializer,
-                          CartItemSerializer)
+                          CartItemCreateSerializer,
+                          CartItemUpdateSerializer,
+                          CartItemReadSerializer)
 from constants import MIN_QUANTITY_PRODUCT
 
 
@@ -43,10 +45,16 @@ class CartClearAPIView(generics.CreateAPIView):
 
 
 class CartItemViewSet(viewsets.ModelViewSet):
-    serializer_class = CartItemSerializer
     permission_classes = (permissions.IsAuthenticated,)
     authentication_classes = (TokenAuthentication,)
     lookup_field = 'product__id'
+
+    def get_serializer_class(self):
+        if self.action in ('update', 'partial_update'):
+            return CartItemUpdateSerializer
+        if self.action == 'create':
+            return CartItemCreateSerializer
+        return CartItemReadSerializer
 
     def get_queryset(self):
         return self.request.user.cart.items.all()

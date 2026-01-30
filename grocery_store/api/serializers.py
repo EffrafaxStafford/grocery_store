@@ -34,7 +34,7 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = ('name', 'slug', 'category', 'subcategory', 'price', 'images')
 
 
-class CartItemSerializer(serializers.ModelSerializer):
+class CartItemCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CartItem
@@ -46,8 +46,30 @@ class CartItemSerializer(serializers.ModelSerializer):
         return value
 
 
+class CartItemUpdateSerializer(CartItemCreateSerializer):
+
+    class Meta:
+        model = CartItem
+        fields = ('quantity',)
+
+
+class ProductCartSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Product
+        fields = ['id', 'name', 'slug', 'price']
+
+
+class CartItemReadSerializer(serializers.ModelSerializer):
+    product = ProductCartSerializer(read_only=True)
+
+    class Meta:
+        model = CartItem
+        fields = ('product', 'quantity')
+
+
 class CartSerializer(serializers.ModelSerializer):
-    items = CartItemSerializer(many=True, read_only=True)
+    items = CartItemReadSerializer(many=True, read_only=True)
 
     class Meta:
         model = Cart

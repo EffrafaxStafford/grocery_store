@@ -21,14 +21,23 @@ class SearchFieldNameMixin():
         abstract = True
 
 
+class DisplayLinksMixin():
+    """Миксин для кликабельных полей."""
+
+    list_display_links = ['id', 'name', 'slug']
+
+    class Meta:
+        abstract = True
+
+
 @admin.register(Category)
-class CategoryAdmin(SlugAutoFillMixin, SearchFieldNameMixin, admin.ModelAdmin):
-    list_display = ('id', 'name', 'slug', 'image')
+class CategoryAdmin(SlugAutoFillMixin, SearchFieldNameMixin, DisplayLinksMixin, admin.ModelAdmin):
+    list_display = ('id', 'name', 'slug')
 
 
 @admin.register(Subcategory)
-class SubcategoryAdmin(SlugAutoFillMixin, SearchFieldNameMixin, admin.ModelAdmin):
-    list_display = ('id', 'name', 'slug', 'image', 'category')
+class SubcategoryAdmin(SlugAutoFillMixin, SearchFieldNameMixin, DisplayLinksMixin, admin.ModelAdmin):
+    list_display = ('id', 'name', 'slug', 'category')
 
 
 class ProductImageInline(admin.StackedInline):
@@ -37,7 +46,6 @@ class ProductImageInline(admin.StackedInline):
 
 
 @admin.register(Product)
-class ProductAdmin(SlugAutoFillMixin, SearchFieldNameMixin, admin.ModelAdmin):
+class ProductAdmin(SlugAutoFillMixin, SearchFieldNameMixin, DisplayLinksMixin, admin.ModelAdmin):
     inlines = (ProductImageInline,)
     list_display = ('id', 'name', 'slug', 'price', 'subcategory')
-    
