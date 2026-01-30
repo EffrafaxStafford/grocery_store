@@ -7,5 +7,4 @@ class CartConfig(AppConfig):
     verbose_name = 'Корзина покупок'
 
     def ready(self):
-        from .signals import create_user_cart 
-
+        from .signals import create_user_cart

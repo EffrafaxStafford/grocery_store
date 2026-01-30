@@ -18,7 +18,8 @@ def api_client():
 @pytest.fixture
 def auth_client(api_client, django_user_model):
     """Авторизованный пользователь."""
-    user = django_user_model.objects.create_user(username='user', password='pass')
+    user = django_user_model.objects.create_user(
+        username='user', password='pass')
     token = Token.objects.create(user=user)
     api_client.credentials(HTTP_AUTHORIZATION=f'Token {token.key}')
     api_client.user = user
@@ -52,4 +53,4 @@ def form_data(product):
     return {
         'product': product.id,
         'quantity': 10
-    } 
+    }

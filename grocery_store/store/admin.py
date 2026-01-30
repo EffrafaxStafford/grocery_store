@@ -4,26 +4,14 @@ from .models import Category, Subcategory, Product, ProductImage
 from constants import SIZE_CHOICES
 
 
-class SlugAutoFillMixin():
-    """Миксин для автозаполнения поля slug."""
+class SlugAutoFillSearchDisplayMixin():
+    """
+    Миксин для автозаполнения поля slug,
+    поиска по name и кликабельных полей.
+    """
 
     prepopulated_fields = {'slug': ('name',)}
-
-    class Meta:
-        abstract = True
-
-class SearchFieldNameMixin():
-    """Миксин для поиска по name."""
-
     search_fields = ('name',)
-
-    class Meta:
-        abstract = True
-
-
-class DisplayLinksMixin():
-    """Миксин для кликабельных полей."""
-
     list_display_links = ['id', 'name', 'slug']
 
     class Meta:
@@ -31,12 +19,12 @@ class DisplayLinksMixin():
 
 
 @admin.register(Category)
-class CategoryAdmin(SlugAutoFillMixin, SearchFieldNameMixin, DisplayLinksMixin, admin.ModelAdmin):
+class CategoryAdmin(SlugAutoFillSearchDisplayMixin, admin.ModelAdmin):
     list_display = ('id', 'name', 'slug')
 
 
 @admin.register(Subcategory)
-class SubcategoryAdmin(SlugAutoFillMixin, SearchFieldNameMixin, DisplayLinksMixin, admin.ModelAdmin):
+class SubcategoryAdmin(SlugAutoFillSearchDisplayMixin, admin.ModelAdmin):
     list_display = ('id', 'name', 'slug', 'category')
 
 
@@ -46,6 +34,6 @@ class ProductImageInline(admin.StackedInline):
 
 
 @admin.register(Product)
-class ProductAdmin(SlugAutoFillMixin, SearchFieldNameMixin, DisplayLinksMixin, admin.ModelAdmin):
+class ProductAdmin(SlugAutoFillSearchDisplayMixin, admin.ModelAdmin):
     inlines = (ProductImageInline,)
     list_display = ('id', 'name', 'slug', 'price', 'subcategory')

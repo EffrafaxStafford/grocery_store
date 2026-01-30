@@ -20,7 +20,7 @@ class Cart(models.Model):
     @property
     def total_quantity(self):
         return sum(item.quantity for item in self.items.all())
-    
+
     @property
     def total_price(self):
         return sum(item.total_price for item in self.items.all())
@@ -28,7 +28,7 @@ class Cart(models.Model):
     class Meta:
         verbose_name = 'Корзина пользователя'
         ordering = ('user',)
-    
+
     def __str__(self):
         return self.user.username
 

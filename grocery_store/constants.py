@@ -3,7 +3,7 @@ from typing import Final
 
 SIZE_CHOICES: Final = [
     ('small', 'Маленькое'),
-    ('medium', 'Среднее'), 
+    ('medium', 'Среднее'),
     ('big', 'Большое'),
 ]
 

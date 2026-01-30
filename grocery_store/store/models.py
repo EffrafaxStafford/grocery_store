@@ -11,7 +11,7 @@ class SelfNameMixin():
 
     def __str__(self):
         return self.name
-    
+
 
 class Category(SelfNameMixin, models.Model):
     """Модель для хранения категории."""
@@ -112,6 +112,6 @@ class ProductImage(models.Model):
         verbose_name_plural = 'Изображения'
         ordering = ('-size',)
         unique_together = ['product', 'size']
-    
+
     def __str__(self):
         return f'{self.product.slug}_{self.size}_image'

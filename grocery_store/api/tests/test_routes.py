@@ -10,7 +10,10 @@ from django.urls import reverse
     ('api:categories', 'api:products')
 )
 def test_pages_availability_for_anonymous_user(api_client, urlname):
-    """Операции по эндпоинтам категорий и продуктов может осуществлять любой пользователь."""
+    """
+    Операции по эндпоинтам категорий и продуктов
+    может осуществлять любой пользователь.
+    """
     url = reverse(urlname)
     response = api_client.get(url)
     assert response.status_code == HTTPStatus.OK
@@ -32,4 +35,3 @@ def test_cart_availability(parametrized_client, expected_status, urlname):
     url = reverse(urlname)
     response = parametrized_client.get(url)
     assert response.status_code == expected_status
-

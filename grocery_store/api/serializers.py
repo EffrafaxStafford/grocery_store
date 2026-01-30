@@ -27,7 +27,8 @@ class ProductImageSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     images = ProductImageSerializer(many=True, read_only=True)
     subcategory = serializers.StringRelatedField(read_only=True)
-    category = serializers.CharField(source='subcategory.category.name', read_only=True)
+    category = serializers.CharField(
+        source='subcategory.category.name', read_only=True)
 
     class Meta:
         model = Product
@@ -39,10 +40,11 @@ class CartItemCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = CartItem
         fields = ('product', 'quantity')
-    
+
     def validate_quantity(self, value):
         if value < 0:
-            raise serializers.ValidationError('quantity не может быть отрицательным!')
+            raise serializers.ValidationError(
+                'quantity не может быть отрицательным!')
         return value
 
 
@@ -74,4 +76,3 @@ class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
         fields = ('total_quantity', 'total_price', 'items')
-
